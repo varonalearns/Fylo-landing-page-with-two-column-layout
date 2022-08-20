@@ -43,7 +43,7 @@ body {
     margin: 0 auto;
     text-align: center;
     font-family: var(--ff-body);
-    font-size: 16px;
+    font-size: 14px;
 }
 header {
     display: flex;
@@ -63,15 +63,30 @@ h2,
 p {
     margin-bottom: 1rem;
 } 
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 16px;
+    font-family: var(--ff-headings);
+}
 
 /* -------------------- 
     Custom Styles
 ---------------------*/
 .illustration {
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
 }
 .illustration img {
     width: 100%;
+}
+.bg-curve {
+    height: 45px;
+    width: 100%;
+    background-image: url("images/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /*-----Header Section-----*/
@@ -99,13 +114,7 @@ p {
 
 /* Landing Section */
 #landing-section {
-    margin: 4rem 1rem 10rem 1rem;
-}
-#landing-section .section-txt h1 {
-    font-size: 24px;
-}
-#landing-section .section-txt p {
-    font-size: 14px;
+    margin: 4rem 1rem 5rem 1rem;
 }
 #landing-section form {
     display: flex;
@@ -131,4 +140,55 @@ p {
     font-family: var(--ff-headings);
     font-weight: 700;
 }
+
+/* Productive Section */
+#prod-section {
+    background-color: var(--neutral-blue);
+    padding: 2rem 1rem;
+}
+#prod-section .how-link {
+    margin-bottom: 3rem;
+}
+#prod-section a {
+    color: var(--accent-cyan);
+    border-bottom: 2px solid var(--accent-cyan);
+    padding-bottom: 0.5rem;
+    margin-bottom: 5rem;
+}
+#prod-section a span {
+    margin-right: 1rem;
+}
+#prod-section figure {
+    background-color: white;
+    border-radius: 3px;
+    padding: 2rem;
+    text-align: left;
+}
+#prod-section blockquote p {
+    font-size: 10px;
+}
+#prod-section blockquote img {
+    margin-bottom: 0.5rem;
+}
+#prod-section figcaption {
+    display: flex;
+    flex-direction: row;
+}
+#prod-section .avatar {
+    margin-right: 1rem;
+}
+#prod-section .avatar img{
+    width: 25px;
+    border-radius: 50%;
+}
+#prod-section .avatar-name {
+    font-size: 9px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+#prod-section .avatar-title {
+    font-size: 6px;
+}
+
+
 /*-----Footer Section-----*/
