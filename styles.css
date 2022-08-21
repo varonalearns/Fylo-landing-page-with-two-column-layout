@@ -65,10 +65,12 @@ p {
 } 
 h1 {
     font-size: 24px;
+    font-weight: 700;
 }
 h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-family: var(--ff-headings);
+    font-weight: 700;
 }
 
 /* -------------------- 
@@ -144,7 +146,7 @@ h2 {
 /* Productive Section */
 #prod-section {
     background-color: var(--neutral-blue);
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 4rem 1rem;
 }
 #prod-section .how-link {
     margin-bottom: 3rem;
@@ -190,5 +192,31 @@ h2 {
     font-size: 6px;
 }
 
+/* Call-to-Action Section */
+#cta-section {
+    padding: 3rem 1rem;
+    color: var(--neutral-blue);
+    background-color: var(--prim-washed-blue);
+}
+#cta-section input {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 1rem;
+    padding: 10px 8px;
+    font-size: 10px;
+    font-family: var(--ff-headings);
+}
+#cta-section button {
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--accent-blue);
+    color: var(--neutral-blue);
+    font-size: 10px;
+    font-weight: 700;
+    font-family: var(--ff-headings);
+    padding: 10px 8px;
+}
 
 /*-----Footer Section-----*/
