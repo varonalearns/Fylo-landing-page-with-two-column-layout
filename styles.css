@@ -48,6 +48,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-content: center;
     margin: 1rem;
     width: 91%;
 }
@@ -101,7 +102,7 @@ footer li:last-child {
     width: 100%;
 }
 .bg-curve {
-    height: 45px;
+    height: 100px;
     width: 100%;
     background-image: url("images/bg-curve-mobile.svg");
     background-repeat: no-repeat;
@@ -302,4 +303,108 @@ footer li:last-child {
 }
 .attribution a {
     color: var(--accent-cyan);
+}
+
+/*----------------------------------------------------------------------------
+    Tablet Design
+------------------------------------------------------------------------------*/
+@media screen and (min-width: 700px) {
+    /* -------------------- 
+        Specific Styles
+    ---------------------*/
+    .bg-curve {
+        height: 175px;
+    }
+
+    /*-----Header Section-----*/
+    header {
+        margin: 3rem;
+        width: 88%;
+    }
+    .pages-nav {
+        align-self: center;
+        font-size: 18px;
+    }
+    .pages-nav ul li {
+        margin-right: 2rem;
+    }
+    .pages-nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    /*-----Main Section-----*/
+
+    /* Landing Section */
+    #landing-section {
+        margin: 4rem 3rem 7rem 3rem;
+    }
+    #landing-section input {
+        width: 75%;
+    }
+    #landing-section button {
+        width: 75%;
+    }
+
+    /* Productive Section */
+    #prod-section {
+        padding: 2rem 3rem 4rem 3rem;
+    }
+    #prod-section .how-link {
+        margin-bottom: 4rem;
+    }
+    #prod-section a {
+        margin-bottom: 7rem;
+    }
+    #prod-section figure {
+        border-radius: 5px;
+    }
+    #prod-section blockquote p {
+        font-size: 12px;
+    }
+    #prod-section figcaption {
+        align-items: center;
+    }
+    #prod-section .avatar img{
+        width: 50px;
+    }
+    #prod-section .avatar-name {
+        font-size: 12px;
+    }
+    #prod-section .avatar-title {
+        font-size: 10px;
+    }
+    /* Call-to-Action Section */
+    #cta-section {
+        padding: 3rem;
+    }
+    #cta-section input {
+        width: 75%;
+        border-radius: 5px;
+    }
+    #cta-section button {
+        width: 75%;
+        border-radius: 5px;
+    }
+    /*-----Footer Section-----*/
+    footer {
+        padding: 4rem 3rem;
+    }
+    .footer-logo {
+        width: 25%;
+    }
+
+    /* More Pages Section */
+    .more-pages {
+        margin-bottom: 1.50rem;
+    }
+
+    /* Misc Pages Section */
+    .misc-pages {
+        margin-bottom: 1.50rem;
+    }
+
+    /* Social Media Section */
+    .social-media li {
+        width: 5%;
+    }
 }
