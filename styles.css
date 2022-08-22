@@ -40,6 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
     text-align: center;
     font-family: var(--ff-body);
@@ -224,6 +225,7 @@ footer li:last-child {
     padding: 10px 8px;
     font-size: 10px;
     font-family: var(--ff-headings);
+    border: none;
 }
 #cta-section button {
     width: 100%;
@@ -373,6 +375,7 @@ footer li:last-child {
     #prod-section .avatar-title {
         font-size: 10px;
     }
+
     /* Call-to-Action Section */
     #cta-section {
         padding: 3rem;
@@ -406,5 +409,152 @@ footer li:last-child {
     /* Social Media Section */
     .social-media li {
         width: 5%;
+    }
+}
+
+/*----------------------------------------------------------------------------
+    Desktop Design
+------------------------------------------------------------------------------*/
+@media screen and (min-width: 900px) {
+    /* -------------------- 
+        General Styles
+    ---------------------*/
+    h1,
+    h2 {
+        font-size: 40px;
+        text-align: left;
+    }
+    p {
+        text-align: left;
+    }
+    .illustration {
+        margin-bottom: 0;
+    }
+    .container {
+        margin-right: 5rem;
+    }
+
+    /* -------------------- 
+        Specific Styles
+    ---------------------*/
+
+    /*-----Header Section-----*/
+    header {
+        width: 90%;
+    }
+    /*-----Main Section-----*/
+
+    /* Landing Section */
+    #landing-section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 4rem 4rem 7rem 4rem;
+    }
+    #landing-section p {
+        font-size: 17px;
+    }
+    #landing-section form {
+        flex-direction: row;
+    }
+    #landing-section input {
+        width: 70%;
+        margin: 0 1rem 0 0;
+    }
+    #landing-section button {
+        width: 30%;
+    }
+    #landing-section button:hover {
+        cursor: pointer;
+        background-color: rgb(108, 155, 255, 100%);
+    }
+
+    /* Productive Section */
+    #prod-section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 2rem 4rem 4rem 4rem;
+    }
+    #prod-section h2 {
+        font-size: 32px;
+    }
+    #prod-section p {
+        font-size: 16px;
+    }
+    #prod-section .how-link {
+        margin-bottom: 3rem;
+        text-align: left;
+        font-size: 16px;
+    }
+    #prod-section a:hover {
+        color: rgb(113, 223, 204, 100%);
+        border-bottom: 2px solid rgb(113, 223, 204, 100%);
+    }
+
+    /* Call-to-Action Section */
+    #cta-section {
+        padding: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .cta-txt {
+        width: 60%;
+        margin-right: 8rem;
+    }
+    #cta-section form {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    #cta-section input {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    #cta-section button {
+        width: 50%;
+    }
+    #cta-section button:hover {
+        cursor: pointer;
+        background-color: rgb(108, 155, 255, 100%);
+    }
+
+    /*-----Footer Section-----*/
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "top top top top"
+            "mid1 mid2 mid3 mid4"
+            "bott bott bott bott";
+        padding: 4rem;
+    }
+    .footer-logo {
+        grid-area: top;
+        width: 20%;
+    }
+    footer address {
+        grid-area: mid1;
+        justify-self: center;
+    }
+    .more-pages {
+        grid-area: mid2;
+        justify-self: center;
+    }
+    .misc-pages {
+        grid-area: mid3;
+        justify-self: center;
+    }
+    .social-media {
+        grid-area: mid4;
+        justify-self: center;
+    }
+    .social-media li {
+        width: 10%;
+    }
+    .attribution {
+        grid-area: bott;
     }
 }
