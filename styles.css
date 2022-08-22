@@ -413,7 +413,7 @@ footer li:last-child {
 }
 
 /*----------------------------------------------------------------------------
-    Desktop Design
+    Sm Desktop Design
 ------------------------------------------------------------------------------*/
 @media screen and (min-width: 900px) {
     /* -------------------- 
@@ -537,7 +537,7 @@ footer li:last-child {
     }
     footer address {
         grid-area: mid1;
-        justify-self: center;
+        justify-self: start;
     }
     .more-pages {
         grid-area: mid2;
@@ -549,7 +549,7 @@ footer li:last-child {
     }
     .social-media {
         grid-area: mid4;
-        justify-self: center;
+        justify-self: end;
     }
     .social-media li {
         width: 10%;
@@ -557,4 +557,37 @@ footer li:last-child {
     .attribution {
         grid-area: bott;
     }
+    .attribution a:hover {
+        color: rgb(113, 223, 204, 100%);
+    }
+}
+
+/*----------------------------------------------------------------------------
+    Desktop Design
+------------------------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+    /* -------------------- 
+        General Styles
+    ---------------------*/
+
+    /* -------------------- 
+        Specific Styles
+    ---------------------*/
+    .bg-curve {
+        height: 200px;
+    }
+
+    /*-----Header Section-----*/
+    header {
+        width: 92%;
+    }
+    header .logo {
+        width: 15%;
+    }
+    .footer-logo {
+        width: 15%;
+    }
+
+
+
 }
