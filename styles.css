@@ -567,10 +567,6 @@ footer li:last-child {
 ------------------------------------------------------------------------------*/
 @media screen and (min-width: 1200px) {
     /* -------------------- 
-        General Styles
-    ---------------------*/
-
-    /* -------------------- 
         Specific Styles
     ---------------------*/
     .bg-curve {
@@ -584,10 +580,10 @@ footer li:last-child {
     header .logo {
         width: 15%;
     }
-    .footer-logo {
-        width: 15%;
+
+    /*-----Footer Section-----*/
+    footer a:hover {
+        cursor: pointer;
+        color: var(--accent-blue);
     }
-
-
-
 }
